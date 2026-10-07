@@ -9,7 +9,7 @@ catch { ({chromium} = require(process.env.PLAYWRIGHT_MODULE_PATH ?? 'C:/Users/me
 const base = process.env.APP_TEST_URL ?? 'http://127.0.0.1:5174';
 const browserPath = process.env.CHROMIUM_PATH ?? ['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','C:/Program Files/Google/Chrome/Application/chrome.exe'].find(existsSync);
 const browser = await chromium.launch({headless:true,...(browserPath ? {executablePath:browserPath} : {})});
-await mkdir('docs/screenshots',{recursive:true});
+await mkdir('artifacts/browser-tests/screenshots',{recursive:true});
 const context = await browser.newContext({viewport:{width:1440,height:1000}});
 const page = await context.newPage();
 const failures = [];
@@ -29,16 +29,16 @@ async function proceed() {
 }
 try {
   await page.goto(base); await page.getByRole('button',{name:'Bắt đầu hành trình'}).waitFor();
-  await page.screenshot({path:'docs/screenshots/desktop.png',fullPage:true});
+  await page.screenshot({path:'artifacts/browser-tests/screenshots/desktop.png',fullPage:true});
   await page.setViewportSize({width:390,height:844});
-  await page.screenshot({path:'docs/screenshots/mobile.png',fullPage:true});
+  await page.screenshot({path:'artifacts/browser-tests/screenshots/mobile.png',fullPage:true});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false); completed.push('Màn chào desktop/mobile không tràn ngang');
   await page.setViewportSize({width:1440,height:1000});
   await page.getByRole('button',{name:'Bắt đầu hành trình'}).click();
   await page.locator('.choices .choice').evaluateAll(buttons=>{buttons[0].click();buttons[1].click();});
   assert.equal((await saved(gameKey)).history.length,1);assert.equal((await saved(gameKey)).stats.capital,45);
   const transaction=await saved(gameKey);await page.reload();assert.deepEqual(await saved(gameKey),transaction);completed.push('Bấm chọn liên tiếp chỉ ghi một lần; tải lại giữ giao dịch');
-  await page.screenshot({path:'docs/screenshots/game-result.png',fullPage:true});
+  await page.screenshot({path:'artifacts/browser-tests/screenshots/game-result.png',fullPage:true});
   await page.getByRole('button',{name:'Lý luận giải thích điều gì?'}).click();
   await page.locator('.theory-card .article-link').first().click();
   await page.getByRole('heading',{name:'Quy luật giá trị và cạnh tranh',exact:true}).waitFor();
@@ -74,8 +74,8 @@ try {
     for(const route of ['choi','kien-thuc','trac-nghiem','hoi-dap']){await page.goto(base+'/#/'+route);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`Tràn ngang ${route} ở ${width}`);}
   }
   completed.push('Bốn tab ở chiều rộng 360/390/430 px không tràn ngang');
-  await page.goto(base+'/#/hoi-dap');await page.screenshot({path:'docs/screenshots/chat-mobile.png',fullPage:true});
-  await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:'docs/screenshots/chat-desktop.png',fullPage:true});
+  await page.goto(base+'/#/hoi-dap');await page.screenshot({path:'artifacts/browser-tests/screenshots/chat-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:'artifacts/browser-tests/screenshots/chat-desktop.png',fullPage:true});
   await page.evaluate(async()=>{await navigator.serviceWorker.ready;});
   await page.reload();await context.setOffline(true);await page.reload();
   await page.locator('.starter-questions').getByRole('button',{name:'Cartel là gì?',exact:true}).click();
@@ -87,10 +87,10 @@ try {
   const started=performance.now();const times=await Promise.all(Array.from({length:60},async()=>{const start=performance.now();for(const path of ['/',asset,'/illustrations/shop.svg']){const response=await fetch(base+path);assert.equal(response.status,200);await response.arrayBuffer();}return performance.now()-start;}));
   const p95=times.sort((a,b)=>a-b)[56];completed.push(`60 phiên tải đồng thời trên máy cục bộ: 180/180 HTTP 200; p95 ${Math.round(p95)} ms; tổng ${Math.round(performance.now()-started)} ms`);
   assert.deepEqual(failures,[]);
-  await writeFile('docs/browser-test-results.json',JSON.stringify({testedAt:new Date().toISOString(),target:base,checks:completed,consoleErrors:failures},null,2));
+  await writeFile('artifacts/browser-tests/browser-test-results.json',JSON.stringify({testedAt:new Date().toISOString(),target:base,checks:completed,consoleErrors:failures},null,2));
   console.log(completed.join('\n'));
 } catch(error) {
-  await page.screenshot({path:'docs/screenshots/test-failure.png',fullPage:true}).catch(()=>{});
-  await writeFile('docs/browser-test-failure.json',JSON.stringify({checks:completed,error:error.message,url:page.url(),body:await page.locator('body').innerText().catch(()=>''),consoleErrors:failures},null,2));
+  await page.screenshot({path:'artifacts/browser-tests/screenshots/test-failure.png',fullPage:true}).catch(()=>{});
+  await writeFile('artifacts/browser-tests/browser-test-failure.json',JSON.stringify({checks:completed,error:error.message,url:page.url(),body:await page.locator('body').innerText().catch(()=>''),consoleErrors:failures},null,2));
   throw error;
 } finally {await context.close();await browser.close();}

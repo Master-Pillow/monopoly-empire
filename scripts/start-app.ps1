@@ -4,7 +4,8 @@
   [string]$ProductionUrl = ''
 )
 $ErrorActionPreference = 'Stop'
-Set-Location -LiteralPath $PSScriptRoot
+$taskProjectRoot = Split-Path -Parent $PSScriptRoot
+Set-Location -LiteralPath $taskProjectRoot
 $taskNodeCommand = Get-Command node -ErrorAction SilentlyContinue
 if ($taskNodeCommand) { $taskNodePath = $taskNodeCommand.Source }
 else { $taskNodePath = Join-Path $env:USERPROFILE '.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' }
@@ -24,7 +25,7 @@ if ($Mode -eq 'Install') {
   }
   exit
 }
-if (-not (Test-Path -LiteralPath 'node_modules/vite/bin/vite.js')) { throw 'Chưa có thư viện. Chạy StartApp.ps1 -Mode Install trước.' }
+if (-not (Test-Path -LiteralPath 'node_modules/vite/bin/vite.js')) { throw 'Chưa có thư viện. Chạy scripts\start-app.ps1 -Mode Install trước.' }
 switch ($Mode) {
   'Build' {
     Invoke-AppStep -StepArguments @('scripts/validate-content.mjs')

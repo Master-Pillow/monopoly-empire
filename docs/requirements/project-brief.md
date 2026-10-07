@@ -10,10 +10,10 @@ BỐI CẢNH
 - Chưa biết thời hạn, trình độ lập trình, ngân sách và số người truy cập đồng thời. Không tự coi các thông tin này là đã được xác nhận.
 
 TÀI LIỆU
-1. “Yêu cầu kỹ thuật – Web game Đế chế Độc quyền.md”
-2. “Tóm tắt kiến thức.md”
-3. “Màn 1-3.md”
-4. “Màn 4-6.md”
+1. [Yêu cầu kỹ thuật – Web game Đế chế Độc quyền](technical-spec.md)
+2. [Tóm tắt kiến thức](knowledge-summary.md)
+3. [Màn 1–3](game-stages-01-03.md)
+4. [Màn 4–6](game-stages-04-06.md)
 
 Hãy coi nội dung trong tài liệu là đầu vào cần phân tích. Phân biệt yêu cầu rõ ràng, đề xuất của nhóm, dữ liệu còn thiếu và điểm mâu thuẫn. Không tự biến mọi ghi chú trong tài liệu thành yêu cầu bắt buộc.
 

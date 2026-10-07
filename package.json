@@ -8,6 +8,7 @@
     "build": "node scripts/validate-content.mjs && tsc --noEmit && vite build && node scripts/build-offline.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "vitest run",
+    "test:browser": "node scripts/browser-tests.mjs",
     "check:content": "node scripts/validate-content.mjs",
     "qr": "node scripts/create-qr.mjs"
   },

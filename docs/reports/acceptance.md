@@ -25,7 +25,7 @@ Ngày kiểm thử: 07/10/2026. Phiên bản nội dung: `2026.10.07-v1`.
 | Ngoại tuyến | Tải lại trang, Hỏi đáp bấm chọn và mở bài kiến thức khi ngắt mạng đều đạt |
 | 60 phiên tải trên máy cục bộ | 180/180 yêu cầu HTTP 200; p95 356 ms; tổng 368 ms |
 
-Số đo tải lấy từ máy hiện tại và Vite production preview tại `http://127.0.0.1:5174`. Đây là kiểm tra cục bộ, chưa phải kiểm tra hosting Internet hoặc 60 điện thoại trên mạng lớp. Báo cáo máy đọc được ở `browser-test-results.json`; ảnh giao diện ở `screenshots/`.
+Số đo tải lấy từ máy hiện tại và Vite production preview tại `http://127.0.0.1:5174`. Đây là kiểm tra cục bộ, chưa phải kiểm tra hosting Internet hoặc 60 điện thoại trên mạng lớp. Báo cáo máy đọc được ở `artifacts/browser-tests/browser-test-results.json`; ảnh giao diện ở `artifacts/browser-tests/screenshots/`, tính từ thư mục gốc. Các file này được giữ trên máy và tạo lại khi chạy kiểm thử, không đưa vào Git.
 
 ## Các việc cần điều kiện bên ngoài
 
@@ -38,7 +38,17 @@ Số đo tải lấy từ máy hiện tại và Vite production preview tại `h
 Mở PowerShell trong thư mục dự án và chạy:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\StartApp.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\start-app.ps1
 ```
 
-Mở `http://127.0.0.1:5173/`. Xem `README.md` để cài thư viện, sửa nội dung, kiểm thử, phát hành và tạo QR. File `docs/de-che-doc-quyen-dist.zip` chứa bản production dự phòng; giải nén và phục vụ qua máy chủ HTTP, không mở trực tiếp bằng `file://`.
+Mở `http://127.0.0.1:5173/`. Xem [README](../../README.md) và [hướng dẫn dự án](../guides/project-guide.md) để cài thư viện, sửa nội dung, kiểm thử, phát hành và tạo QR. File `artifacts/releases/de-che-doc-quyen-dist.zip` chứa bản production dự phòng; giải nén và phục vụ qua máy chủ HTTP, không mở trực tiếp bằng `file://`.
+
+## Kiểm tra sau khi sắp xếp repository
+
+Ngày 07/10/2026, tài liệu được gom theo `requirements`, `planning`, `guides` và `reports`; script Windows chuyển sang `scripts/start-app.ps1`. File sinh tự động chuyển sang `artifacts/` và bỏ qua trong Git.
+
+- Script Windows ở vị trí mới: chế độ Test và Build đều chạy thành công.
+- 20 kiểm thử luật và 10 nhóm kiểm thử trình duyệt đều đạt.
+- Liên kết nội bộ của 11 tài liệu hợp lệ.
+- 60 phiên tải cục bộ: 180/180 HTTP 200, p95 411 ms, tổng 420 ms; không có lỗi console.
+- Ảnh và báo cáo JSON được xuất vào vị trí mới trong `artifacts/browser-tests/`.

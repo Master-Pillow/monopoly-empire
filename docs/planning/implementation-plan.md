@@ -1,12 +1,12 @@
 **Kế hoạch triển khai “Đế chế Độc quyền” — bản 1, ngày 07/10/2026**
 
-**Trạng thái thực hiện ngày 07/10/2026:** Đã có bản website đủ bốn tính năng, 20 kiểm thử luật và 10 nhóm kiểm thử trình duyệt đạt. Xem `README.md` để chạy và `docs/NGHIEM_THU.md` để xem kết quả. Phát hành HTTPS/QR đang chờ tài khoản hosting; nội dung và luật tạm vẫn chờ đối chiếu giáo trình/duyệt của nhóm.
+**Trạng thái thực hiện ngày 07/10/2026:** Đã có bản website đủ bốn tính năng, 20 kiểm thử luật và 10 nhóm kiểm thử trình duyệt đạt. Xem [README](../../README.md) để chạy và [báo cáo nghiệm thu](../reports/acceptance.md) để xem kết quả. Phát hành HTTPS/QR đang chờ tài khoản hosting; nội dung và luật tạm vẫn chờ đối chiếu giáo trình/duyệt của nhóm.
 
 **Cập nhật khi triển khai:** Người dùng đã xác nhận phần Hỏi đáp chỉ cần hiển thị câu hỏi cơ bản để bấm chọn và trả câu trả lời tương ứng. Bản thực hiện dùng 40 cặp hỏi–đáp soạn sẵn, không yêu cầu nhập câu hỏi tự do hay API AI. Các mục về máy chủ AI bên dưới giữ lại như phương án tương lai, không nằm trong phạm vi nghiệm thu bản này.
 
 Tài liệu hiện đủ để xác định sản phẩm và thiết kế luồng học, nhưng chưa đủ để chốt luật chơi và nội dung học thuật. Khuyến nghị làm một website tĩnh bằng React + TypeScript + Vite, phục vụ 60 người dùng qua điện thoại, lưu tiến trình trên thiết bị và dùng bộ hỏi–đáp soạn sẵn làm chế độ mặc định. Đây là phương án phù hợp với ngân sách 0 đồng đã được xác nhận.
 
-Đây là kế hoạch; chưa viết mã ứng dụng, tạo tài khoản dịch vụ hay đưa website lên hosting. Các điểm số bổ sung, ngưỡng kết cục và ước lượng dưới đây đều là đề xuất, không phải dữ liệu đã được nhóm xác nhận.
+Phần dưới giữ nội dung kế hoạch trước khi viết mã; trạng thái thực hiện xem ở đầu tài liệu và báo cáo nghiệm thu. Các điểm số bổ sung, ngưỡng kết cục và ước lượng dưới đây đều là đề xuất, không phải dữ liệu đã được nhóm xác nhận.
 
 Thông tin đã xác nhận: 60 người truy cập đồng thời; ngân sách 0 đồng; chưa có bảng điểm đã sửa, ngưỡng kết cục và giáo trình chính thức. Thời hạn, trình độ lập trình và việc có API key/tín dụng miễn phí vẫn chưa xác nhận.
 
@@ -33,7 +33,7 @@ Tài liệu kỹ thuật cho phép phương án hỏi–đáp soạn sẵn khi c
 
 **2. Đối chiếu yêu cầu với đầu vào**
 
-Quy ước nguồn: R = `requirements.md`; KT = `Yêu cầu kỹ thuật – Web game Đế chế Độc quyền.md`; M13 = `Màn 1-3.md`; M46 = `Màn 4-6.md`; K = `Tóm tắt kiến thức.md`. P0 là bắt buộc để dùng trên lớp; P1 là hoàn thiện bản nộp; P2 là tùy chọn.
+Quy ước nguồn: R = [đề bài](../requirements/project-brief.md); KT = [yêu cầu kỹ thuật](../requirements/technical-spec.md); M13 = [Màn 1–3](../requirements/game-stages-01-03.md); M46 = [Màn 4–6](../requirements/game-stages-04-06.md); K = [tóm tắt kiến thức](../requirements/knowledge-summary.md). Tên file gốc được ghi ở [mục lục tài liệu](../README.md). P0 là bắt buộc để dùng trên lớp; P1 là hoàn thiện bản nộp; P2 là tùy chọn.
 
 | Yêu cầu | Nguồn | Ưu tiên | Điểm chưa rõ/thiếu | Cách xử lý đề xuất |
 |---|---|---|---|---|

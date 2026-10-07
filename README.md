@@ -1,102 +1,74 @@
-# Đế chế Độc quyền
+# Monopoly Empire — Đế chế Độc quyền
 
-Web game học Chương 4 — Cạnh tranh và độc quyền, lấy cảm hứng từ lịch sử Samsung. React + TypeScript + Vite, chạy tại trình duyệt và lưu tiến trình trên thiết bị. Không tài khoản, không API trả phí.
+Web game học Chương 4 Kinh tế chính trị Mác–Lênin về cạnh tranh và độc quyền, lấy cảm hứng từ lịch sử Samsung. React + TypeScript + Vite; tiến trình lưu trên thiết bị, không cần tài khoản hoặc API trả phí.
 
-## Đã triển khai
+## Tính năng
 
-- Màn chào và 4 tab dùng được trên điện thoại.
-- 6 màn × 3 lựa chọn; 4 chỉ số khởi đầu 50, giới hạn 0–100.
-- Rủi ro M3B, sự kiện phạt M5A, lời dẫn riêng khi chọn M4C.
-- Kết quả, 5 kết cục có thứ tự ưu tiên, lịch sử, chơi lại, sao chép kết quả.
-- 12 bài kiến thức có liên kết từ game và câu sai.
-- 24 câu trắc nghiệm, 10 câu ngẫu nhiên không trùng mỗi lượt; đảo đáp án, giải thích ngay, tổng kết câu sai.
-- 40 câu hỏi bấm chọn và câu trả lời tương ứng. Đây là nội dung soạn sẵn theo yêu cầu cập nhật của người dùng, không gọi API AI.
-- 6 minh họa SVG riêng cho màn chơi và 1 minh họa màn chào do dự án tự tạo.
-- Cache ngoại tuyến của bản production sau lần tải đầu, thông báo cập nhật, xử lý bản lưu hỏng và xung đột cửa sổ.
+- Game 6 màn, 18 lựa chọn, 4 chỉ số và 5 kết cục.
+- 12 bài kiến thức, 24 câu trắc nghiệm với 10 câu ngẫu nhiên mỗi lượt.
+- 40 câu Hỏi đáp bấm chọn với câu trả lời soạn sẵn.
+- Giao diện điện thoại, lưu tiến trình và hỗ trợ ngoại tuyến sau lần tải đầu của bản production.
 
-## Chạy trên Windows
+## Chạy nhanh
 
-Nếu dùng máy hiện tại có runtime Codex, mở PowerShell trong thư mục dự án:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\StartApp.ps1
-```
-
-Lệnh mặc định chạy bản production ở `http://127.0.0.1:5173/`. Ctrl+C để dừng. Script tìm Node đang cài hoặc runtime Codex của tài khoản hiện tại; không chỉnh PATH vĩnh viễn.
-
-Các chế độ:
-
-```powershell
-.\StartApp.ps1 -Mode Dev
-.\StartApp.ps1 -Mode Test
-.\StartApp.ps1 -Mode Build
-.\StartApp.ps1 -Mode Install
-.\StartApp.ps1 -Mode QR -ProductionUrl https://ten-website.vercel.app
-```
-
-Trên máy khác: dùng Node 24 (phiên bản đã kiểm thử: 24.19.0) và pnpm. Giữ `pnpm-lock.yaml`:
+Cần Node 24 và pnpm. Cài thư viện từ file khóa, sau đó chạy:
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm test
-pnpm build
-pnpm preview --port 5173
+pnpm dev
 ```
 
-Phát triển: `pnpm dev`. Không mở trực tiếp `dist/index.html` bằng `file://`; phải dùng máy chủ HTTP/HTTPS. `localhost` chỉ dùng được trên máy chạy server, không phải địa chỉ để cả lớp quét QR từ Internet.
+Trên máy Windows hiện tại có runtime Codex, mở PowerShell tại thư mục dự án để chạy bản production:
 
-## Sửa nội dung
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\start-app.ps1
+```
 
-| File | Nội dung |
+Địa chỉ mặc định: `http://127.0.0.1:5173/`. Nếu chưa cài thư viện, chạy script với `-Mode Install` trước.
+
+## Các lệnh chính
+
+| Lệnh | Mục đích |
 |---|---|
-| `src/content/stages.json` | Lời dẫn, lựa chọn, điểm, sự kiện và thẻ lý luận |
-| `src/content/endings.json` | Điều kiện và ưu tiên kết cục |
-| `src/content/articles.json` | 12 bài kiến thức |
-| `src/content/questions.json` | Ngân hàng 24 câu và ID đáp án đúng |
-| `src/content/faq.json` | 40 câu hỏi bấm chọn và câu trả lời |
-| `src/content/sources.json` | Tên và đường dẫn nguồn |
-| `src/content/content-meta.json` | Phiên bản và các giả định tạm |
+| `pnpm dev` | Phát triển với cập nhật trực tiếp |
+| `pnpm test` | Kiểm thử luật game và trắc nghiệm |
+| `pnpm check:content` | Kiểm tra dữ liệu nội dung |
+| `pnpm build` | Kiểm tra TypeScript, dựng production và cache ngoại tuyến |
+| `pnpm preview --port 5173` | Xem bản production đã dựng |
+| `pnpm test:browser` | Kiểm thử trình duyệt; cần bản production chạy tại cổng 5174 |
+| `pnpm qr <URL-HTTPS-production>` | Tạo QR cho địa chỉ đã phát hành |
 
-Giữ ID ổn định. Mỗi lựa chọn phải đủ `capital`, `marketShare`, `welfare`, `marketPower`. Đáp án chuẩn dùng ID, không dùng vị trí A/B/C sau khi đảo.
+## Cấu trúc repository
 
-Sau khi đổi luật hoặc nội dung, tăng `version` trong `content-meta.json`, chạy `pnpm test` và `pnpm build`. Bản lưu khác phiên bản sẽ được thông báo để bắt đầu lượt mới. Sửa CSS không bắt buộc tăng phiên bản nội dung.
-
-## Các quy ước đang áp dụng
-
-Đúng bảng tạm trong kế hoạch: chỉ số không ghi bằng 0; M2A cộng ngay lợi thế kỳ vọng; M3B trừ vốn trước rồi bốc rủi ro 50% nếu còn sống; M5A cộng 20 rồi phạt 30 trước khi cắt trần; M4C đổi lời dẫn M5. M5 là hồi tưởng, không nối niên đại liên tục với M4.
-
-Điểm M4B/C, M5C, một số chỉ số đề xuất và ngưỡng kết cục chưa có xác nhận từ nhóm. Nội dung học thuật đã được biên tập để phân biệt mô phỏng/lịch sử/điều tra/kết luận, nhưng chưa có giáo trình chính thức của lớp để đối chiếu. Trạng thái `provisional`/`approved: false` ghi đúng thực trạng, không phải lỗi kỹ thuật.
-
-Khi người phụ trách đã duyệt: sửa trạng thái nội dung thành `approved`, ghi tham chiếu giáo trình trong hồ sơ duyệt và bật `approved` cho từng bài/câu hỏi/FAQ. `node scripts/validate-content.mjs --classroom` kiểm tra cổng duyệt này; không tự chuyển trạng thái khi chưa duyệt.
-
-## Kiểm thử
-
-`pnpm test` kiểm tra tính điểm, trần/sàn, xác suất ở ngưỡng, ưu tiên kết cục, toàn bộ nhánh, chống hành động trùng, khôi phục giao dịch và đảo/chấm quiz.
-
-Để chạy kiểm thử trình duyệt, mở bản production ở cổng 5174 rồi:
-
-```sh
-node scripts/browser-tests.mjs
+```text
+monopoly-empire/
+├── src/                  # Mã nguồn ứng dụng
+│   ├── components/       # Thành phần giao diện dùng chung
+│   ├── content/          # Dữ liệu game, bài học, quiz và hỏi đáp
+│   ├── domain/           # Luật game, chấm quiz và kiểu dữ liệu
+│   ├── features/         # Chơi, Kiến thức, Trắc nghiệm, Hỏi đáp
+│   ├── lib/              # Lưu trữ và tiện ích
+│   └── styles/           # CSS và bố cục điện thoại
+├── public/               # Favicon, manifest và minh họa SVG
+├── scripts/              # Chạy Windows, build, kiểm tra nội dung và tạo QR
+├── tests/                # Kiểm thử tự động
+├── docs/                 # Tài liệu; xem docs/README.md
+│   ├── requirements/     # Tài liệu đầu vào của nhóm
+│   ├── planning/         # Kế hoạch và giả định triển khai
+│   ├── guides/           # Hướng dẫn dự án và kịch bản demo
+│   └── reports/          # Báo cáo nghiệm thu
+├── artifacts/            # Kết quả kiểm thử, ảnh, ZIP và QR; bỏ qua trong Git
+└── dist/                 # Bản build; bỏ qua trong Git
 ```
 
-Script dùng Playwright cài trên máy hoặc bản đi kèm runtime Codex hiện tại; dùng Edge/Chrome đã cài. Nếu máy khác chưa có Playwright, cài công cụ này cho môi trường kiểm thử. Có thể đặt `PLAYWRIGHT_MODULE_PATH`, `CHROMIUM_PATH`, `APP_TEST_URL` để chỉ định đường dẫn và địa chỉ cần thử.
+`package.json`, `pnpm-lock.yaml`, `index.html` và các file cấu hình ở thư mục gốc để công cụ build/hosting nhận diện dự án.
 
-Kết quả ở `docs/browser-test-results.json`, ảnh giao diện ở `docs/screenshots/`. Kiểm thử 60 phiên trên localhost là kiểm tra kỹ thuật cục bộ; chưa thay thế thử 60 điện thoại và mạng Wi-Fi thực tại lớp.
+## Tài liệu
 
-## Đưa lên Vercel và tạo QR
+- [Mục lục tài liệu](docs/README.md)
+- [Hướng dẫn chạy, sửa nội dung và phát hành](docs/guides/project-guide.md)
+- [Kế hoạch và giả định triển khai](docs/planning/implementation-plan.md)
+- [Kịch bản trình bày](docs/guides/classroom-demo.md)
+- [Kết quả kiểm thử](docs/reports/acceptance.md)
 
-Đã có `vercel.json` cho bản tĩnh: lệnh build `pnpm build`, thư mục đầu ra `dist`. Không cần biến môi trường hoặc API key.
-
-1. Đưa mã nguồn cùng `pnpm-lock.yaml` lên kho của bạn, hoặc dùng Vercel CLI đã đăng nhập.
-2. Trên Vercel chọn dự án Vite và dùng cấu hình trong `vercel.json`.
-3. Phát hành production; mở URL HTTPS bằng điện thoại/cửa sổ ẩn danh để chắc chắn người học không bị yêu cầu đăng nhập.
-4. Chạy `pnpm qr <URL-HTTPS-production>` để tạo PNG, SVG và file URL trong `docs/qr`.
-5. In QR cùng địa chỉ chữ lên slide. Tải trước website trên máy trình chiếu để cache ngoại tuyến.
-
-Mã nguồn đã sẵn sàng phát hành. Địa chỉ HTTPS và QR production cần được tạo từ một lần phát hành thành công, không dùng một tên miền giả hoặc QR trỏ localhost.
-
-## Trước giờ học
-
-Mở một lượt game, một lượt quiz và một câu Hỏi đáp trên điện thoại. Kiểm tra QR từ Wi-Fi và mạng di động. Nếu mất mạng sau khi tải/cache đủ, bộ học vẫn hoạt động; thiết bị chưa từng tải website sẽ cần mạng để truy cập lần đầu. Chuẩn bị laptop chạy bản production để trình chiếu khi mạng lớp lỗi.
-
-Không mở nhiều cửa sổ cùng sửa một tiến trình trên cùng thiết bị; khi phát hiện cửa sổ khác đã ghi, ứng dụng yêu cầu tải lại để tránh ghi đè. Chơi lại chỉ đặt lại game, không xóa quiz.
+Nội dung và ngưỡng kết cục đang mang trạng thái `provisional`, chờ đối chiếu giáo trình của lớp. Xem các giả định trong `src/content/content-meta.json` và kế hoạch triển khai.

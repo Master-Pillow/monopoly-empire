@@ -1,0 +1,12 @@
+[
+  {"id":"group","title":"Tài liệu nhóm và kế hoạch triển khai v1","publisher":"Nhóm học tập","url":"","verificationStatus":"provisional"},
+  {"id":"cnt","title":"Samsung C&T — History","publisher":"Samsung C&T","url":"https://www.samsungcnt.com/eng/about-us/history.do","verificationStatus":"verified"},
+  {"id":"semi","title":"Lịch sử ngành bán dẫn Samsung","publisher":"Samsung Semiconductor","url":"https://news.samsungsemiconductor.com/global/about-us/","verificationStatus":"verified"},
+  {"id":"renault","title":"Renault: lịch sử mua Samsung Motors năm 2000","publisher":"Renault Group","url":"https://www.renaultgroup.com/Document-denregistrement-universel-2020/62/","verificationStatus":"verified"},
+  {"id":"micron","title":"Micron: thương vụ Elpida năm 2013","publisher":"Micron","url":"https://www.micron.com/about/company/company-timeline","verificationStatus":"verified"},
+  {"id":"doj","title":"Samsung đồng ý nhận tội và nộp phạt 300 triệu USD (2005)","publisher":"Bộ Tư pháp Hoa Kỳ","url":"https://www.justice.gov/archive/opa/pr/2005/October/05_at_540.html","verificationStatus":"verified"},
+  {"id":"ec-dram","title":"Cartel DRAM: tổng tiền phạt khoảng 331 triệu euro (2010)","publisher":"Ủy ban châu Âu","url":"https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_10_586/IP_10_586_EN.pdf","verificationStatus":"verified"},
+  {"id":"ec-lcd","title":"Công báo EU: quyết định vụ cartel LCD","publisher":"Liên minh châu Âu","url":"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AC%3A2011%3A295%3AFULL","verificationStatus":"verified"},
+  {"id":"sec","title":"Micron báo cáo việc SAMR điều tra DRAM năm 2018","publisher":"Micron / SEC","url":"https://www.sec.gov/Archives/edgar/data/723125/000072312519000014/a2019q2.htm","verificationStatus":"verified"},
+  {"id":"summary","title":"Bản tóm tắt tham khảo Chương 4","publisher":"LetQA","url":"https://letqa.vn/knowledge/tom-tat-kien-thuc-chuong-4-kinh-te-chinh-tri-mac-lenin/74","verificationStatus":"reference"}
+]

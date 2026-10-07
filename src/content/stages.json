@@ -1,0 +1,75 @@
+[
+  {
+    "id":"stage-01","year":"1938","title":"Một tiệm buôn ở Daegu",
+    "context":"Bạn bắt đầu với một cửa hàng nhỏ. Nhiều tiệm quanh đây bán những mặt hàng tương tự, khách hàng luôn so giá. Khoản vốn đầu tiên phải được dùng thế nào để tạo chỗ đứng?",
+    "decision":"Bạn sẽ định giá và đầu tư ra sao?","illustration":"shop",
+    "choices":[
+      {"id":"stage-01-a","label":"A","text":"Bán rẻ hơn đối thủ, chấp nhận lãi mỏng","delta":{"capital":-5,"marketShare":15,"welfare":10,"marketPower":0},"feedback":"Giá thấp giúp bạn thu hút khách và tăng phúc lợi trong mô hình, nhưng lợi nhuận mỏng làm giảm khả năng tích lũy vốn."},
+      {"id":"stage-01-b","label":"B","text":"Giữ giá, đầu tư máy móc để hạ chi phí","delta":{"capital":-10,"marketShare":10,"welfare":5,"marketPower":5},"feedback":"Đầu tư làm giảm vốn trước mắt. Nếu năng suất tăng, chi phí cá biệt có thể thấp hơn mức chung, tạo lợi thế cạnh tranh."},
+      {"id":"stage-01-c","label":"C","text":"Định giá cao, định vị sản phẩm chất lượng","delta":{"capital":10,"marketShare":-10,"welfare":-5,"marketPower":0},"feedback":"Biên lợi nhuận cao hơn nhưng một bộ phận khách rời đi. Giá cao chỉ bền vững khi người mua nhìn thấy giá trị tương ứng."}
+    ],
+    "historyText":"Samsung C&T ghi nhận Samsung Sanghoe được thành lập năm 1938 và Cheil Industries năm 1954. Ba phương án giá trong màn này là tình huống giả lập, không phải lựa chọn lịch sử đã được xác nhận của Samsung.",
+    "sourceIds":["cnt"],"theory":"Cạnh tranh trong ngành thúc đẩy doanh nghiệp cải tiến kỹ thuật, giảm hao phí lao động cá biệt và tìm lợi thế. Không phải cứ hạ giá là phương án tốt trong mọi hoàn cảnh.","articleIds":["k01"]
+  },
+  {
+    "id":"stage-02","year":"1983","title":"Canh bạc bán dẫn",
+    "context":"Các hãng Mỹ và Nhật đã có lợi thế trong chip nhớ. Tham gia ngành này cần nghiên cứu, nhà máy và thời gian học hỏi. Bạn phải chọn giữa dòng tiền hiện tại và một năng lực công nghệ mới.",
+    "decision":"Bạn sẽ đặt nguồn lực vào đâu?","illustration":"chip",
+    "choices":[
+      {"id":"stage-02-a","label":"A","text":"Dồn vốn vào nghiên cứu và sản xuất DRAM","delta":{"capital":-25,"marketShare":5,"welfare":0,"marketPower":15},"feedback":"Chi phí đầu tư lớn làm giảm vốn. Lợi thế dài hạn được quy đổi và cộng ngay trong lượt chơi; thành công thực tế không được bảo đảm."},
+      {"id":"stage-02-b","label":"B","text":"Tiếp tục lắp ráp TV và tủ lạnh giá rẻ","delta":{"capital":10,"marketShare":5,"welfare":0,"marketPower":-5},"feedback":"Bạn củng cố dòng tiền và thị trường đang có, nhưng ít tăng quyền chủ động công nghệ so với chiến lược đầu tư mới."},
+      {"id":"stage-02-c","label":"C","text":"Làm gia công cho hãng có công nghệ","delta":{"capital":5,"marketShare":0,"welfare":0,"marketPower":-10},"feedback":"Gia công giảm rủi ro đầu tư trực tiếp, đổi lại bạn phụ thuộc hơn vào bên đặt hàng và năng lực công nghệ của họ."}
+    ],
+    "historyText":"Lịch sử bán dẫn do Samsung công bố ghi nhận phát triển DRAM 64K năm 1983 và vươn lên dẫn đầu thị trường DRAM năm 1992. Điều đó cho thấy một quá trình phát triển dài, không phải thành quả tức thời.",
+    "sourceIds":["semi"],"theory":"Cạnh tranh buộc doanh nghiệp đổi mới kỹ thuật. Yêu cầu vốn và quy mô lớn có thể thúc đẩy tích tụ, tập trung sản xuất và tạo rào cản gia nhập.","articleIds":["k02","k03"]
+  },
+  {
+    "id":"stage-03","year":"1997","title":"Giữa cơn khủng hoảng",
+    "context":"Khủng hoảng tài chính khiến tín dụng khó tiếp cận và nhiều mảng kinh doanh chịu áp lực. Bạn phải giữ doanh nghiệp sống sót, nhưng mỗi phương án đều phân phối lại lợi ích và chi phí.",
+    "decision":"Bạn sẽ vượt qua sức ép vốn bằng cách nào?","illustration":"crisis",
+    "choices":[
+      {"id":"stage-03-a","label":"A","text":"Cắt mảng thua lỗ, dồn lực vào ngành lõi","delta":{"capital":10,"marketShare":-5,"welfare":-10,"marketPower":5},"feedback":"Tái cơ cấu giúp giữ vốn nhưng thu hẹp nguồn cung trong giả lập. Điểm phúc lợi tạm minh họa đánh đổi này; việc giảm nhân sự tự nó không chứng minh phúc lợi người tiêu dùng giảm."},
+      {"id":"stage-03-b","label":"B","text":"Vay thêm để cứu tất cả mảng kinh doanh","delta":{"capital":-20,"marketShare":0,"welfare":0,"marketPower":0},"feedback":"Cố giữ mọi mảng làm tăng sức ép tài chính. Sau chi phí, nếu còn vốn, game bốc rủi ro một lần; xác suất này không phải dữ liệu lịch sử.","risk":{"type":"chance","probability":0.5,"effect":"bankrupt","title":"Sức ép tín dụng","text":"Nguồn tài trợ đổ vỡ. Doanh nghiệp mất toàn bộ vốn còn lại trong mô phỏng.","safeText":"Bạn tìm được nguồn tài trợ. Doanh nghiệp sống sót, nhưng vẫn phải trả chi phí của quyết định."}},
+      {"id":"stage-03-c","label":"C","text":"Mua lại doanh nghiệp đang gặp khó khăn","delta":{"capital":-10,"marketShare":15,"welfare":-5,"marketPower":15},"feedback":"Mua lại tiêu tốn vốn nhưng gom các nguồn lực đã có, tăng quy mô và quyền lực thị trường. Đây là ví dụ về tập trung tư bản."}
+    ],
+    "historyText":"Theo lịch sử Renault, tập đoàn mua 70,1% vốn Samsung Motors năm 2000. Mốc này là hệ quả tái cấu trúc sau khủng hoảng, không diễn ra ngay năm 1997 và không đồng nghĩa Samsung toàn tập đoàn phá sản.",
+    "sourceIds":["renault"],"theory":"Tập trung tư bản là hợp nhất những tư bản đã tồn tại. Khủng hoảng có thể đẩy nhanh tái cơ cấu và chuyển quyền sở hữu; khác với tích tụ bằng tư bản hóa giá trị thặng dư.","articleIds":["k03"]
+  },
+  {
+    "id":"stage-04","year":"2007–2012","title":"Ai sẽ chớp mắt trước?",
+    "context":"Trong giả lập ngành chip nhớ, nguồn cung vượt nhu cầu và giá giảm. Giảm sản lượng giúp bớt áp lực vốn nhưng có thể mất thị phần. Tiếp tục mở rộng đòi hỏi sức chịu đựng tài chính lớn.",
+    "decision":"Bạn sẽ ứng xử với cuộc cạnh tranh sản lượng?","illustration":"factory",
+    "choices":[
+      {"id":"stage-04-a","label":"A","text":"Tiếp tục mở rộng sản xuất, chấp nhận lỗ","delta":{"capital":-20,"marketShare":20,"welfare":10,"marketPower":20},"feedback":"Bạn chịu chi phí lớn để giữ thị phần và tăng nguồn cung. Quy mô cao có thể tạo lợi thế, đồng thời tăng tập trung của thị trường."},
+      {"id":"stage-04-b","label":"B","text":"Cắt sản lượng để bảo toàn nguồn vốn","delta":{"capital":5,"marketShare":-10,"welfare":-5,"marketPower":-5},"feedback":"Bạn giảm áp lực tài chính, đổi lại thị phần và nguồn cung giảm. Đây là đánh đổi trong mô hình; bảng điểm đang dùng là đề xuất tạm.","provisional":true},
+      {"id":"stage-04-c","label":"C","text":"Ngầm liên hệ đối thủ để cùng giảm sản lượng","delta":{"capital":0,"marketShare":0,"welfare":0,"marketPower":0},"feedback":"Ý định phối hợp mở ra tình huống cartel ở màn tiếp theo. Màn này chưa cộng lợi ích hoặc phạt; bạn vẫn có quyết định riêng tại phòng họp.","flag":"invited-to-cartel","provisional":true}
+    ],
+    "historyText":"Dòng thời gian Micron xác nhận việc mua Elpida vào năm 2013. Thương vụ minh họa tập trung nguồn lực trong ngành. Chiến lược sản lượng của bạn và ý đồ làm đối thủ kiệt sức là giả lập, không phải kết luận về động cơ lịch sử của Samsung.",
+    "sourceIds":["micron"],"theory":"Cạnh tranh và quy mô sản xuất lớn có thể thúc đẩy tập trung. Khi hình thành độc quyền, cạnh tranh vẫn tồn tại giữa các tổ chức lớn, với doanh nghiệp bên ngoài và ngay trong liên minh.","articleIds":["k02","k03","k09"]
+  },
+  {
+    "id":"stage-05","year":"Hồi tưởng · 1999–2002","title":"Sau cánh cửa phòng họp",
+    "context":"Tạm rời dòng thời gian để khám phá một tình huống cartel. Đại diện đối thủ đề nghị cùng ấn định giá bán chip. Lợi nhuận trước mắt hấp dẫn, nhưng thỏa thuận hạn chế cạnh tranh tạo rủi ro cho doanh nghiệp và người mua.",
+    "branchIntro":"Cuộc liên hệ của bạn ở màn trước dẫn tới lời mời họp kín. Đây vẫn là một tình huống hồi tưởng; bạn có thể từ chối hoặc thay đổi quyết định.",
+    "decision":"Bạn sẽ phản hồi đề nghị phối hợp giá?","illustration":"meeting",
+    "choices":[
+      {"id":"stage-05-a","label":"A","text":"Tham gia cartel để tăng lợi ích trước mắt","delta":{"capital":20,"marketShare":0,"welfare":-20,"marketPower":15},"feedback":"Lợi ích ban đầu đi kèm thiệt hại cho người mua và một khoản phạt trong game. Sự kiện phạt chắc chắn là quy tắc sư phạm, không phải dự báo xác suất thực tế.","risk":{"type":"certain","probability":1,"effect":"fine","amount":30,"title":"Khoản phạt cạnh tranh","text":"Thỏa thuận bị xử lý trong mô phỏng. Bạn mất thêm 30 điểm Vốn sau lợi ích 20 điểm của lựa chọn."}},
+      {"id":"stage-05-b","label":"B","text":"Từ chối, tiếp tục cạnh tranh độc lập","delta":{"capital":-5,"marketShare":0,"welfare":10,"marketPower":0},"feedback":"Bạn chịu sức ép cạnh tranh về lợi nhuận nhưng giữ động lực giảm giá và nâng phúc lợi trong mô hình."},
+      {"id":"stage-05-c","label":"C","text":"Tham gia rồi hợp tác điều tra, xin khoan hồng","delta":{"capital":10,"marketShare":0,"welfare":-10,"marketPower":5},"feedback":"Động cơ hợp tác điều tra có thể làm cartel kém bền vững. Khoan hồng phụ thuộc điều kiện của từng vụ, không tự động miễn phạt. Bốn điểm thay đổi là thiết kế tạm vì bảng gốc bị hỏng.","provisional":true}
+    ],
+    "historyText":"Tại Mỹ, Samsung đồng ý nhận tội và nộp phạt 300 triệu USD năm 2005 trong vụ DRAM liên quan giai đoạn 1999–2002. Vụ DRAM EU năm 2010 có tổng tiền phạt khoảng 331 triệu euro, Micron được miễn phạt. Samsung được miễn phạt ở một vụ LCD riêng của EU; không trộn hai sản phẩm và hai vụ việc.",
+    "sourceIds":["doj","ec-dram","ec-lcd"],"theory":"Cartel là liên minh thỏa thuận về giá, sản lượng hoặc thị trường, trong khi thành viên vẫn độc lập về sản xuất và lưu thông. Lợi ích riêng và cơ chế khoan hồng có thể làm liên minh khó duy trì.","articleIds":["k04"]
+  },
+  {
+    "id":"stage-06","year":"2017–2018","title":"Quyền lực trong tay bạn",
+    "context":"Trong tình huống mô phỏng, nhu cầu chip nhớ tăng trong khi năng lực nhà máy không thể mở rộng tức thời. Bạn đã có vị thế đáng kể. Cách sử dụng lợi thế này ảnh hưởng tới doanh nghiệp, người mua và nhà cung cấp nhỏ.",
+    "decision":"Bạn sẽ sử dụng quyền lực thị trường thế nào?","illustration":"servers",
+    "choices":[
+      {"id":"stage-06-a","label":"A","text":"Giữ sản lượng, hưởng lợi từ giá bán cao","delta":{"capital":25,"marketShare":0,"welfare":-15,"marketPower":10},"feedback":"Vốn tăng nhờ lợi thế giá bán trong mô hình, còn người mua chịu chi phí cao hơn. Tăng giá do thiếu cung không tự nó đủ chứng minh thông đồng."},
+      {"id":"stage-06-b","label":"B","text":"Mở rộng sản xuất để tăng cung, hạ giá","delta":{"capital":5,"marketShare":5,"welfare":10,"marketPower":0},"feedback":"Nguồn cung lớn hơn nâng phúc lợi và thị phần, nhưng vốn tăng ít hơn phương án khai thác giá cao."},
+      {"id":"stage-06-c","label":"C","text":"Dùng vị thế để ép giá mua nguyên liệu","delta":{"capital":10,"marketShare":0,"welfare":-5,"marketPower":10},"feedback":"Lợi thế mua làm tăng lợi ích doanh nghiệp nhưng tạo sức ép lên nhà cung cấp. Điểm PL là quy ước tạm; không đo trực tiếp tác động kinh tế thực.","provisional":true}
+    ],
+    "historyText":"Trong hồ sơ nộp SEC, Micron cho biết SAMR thông báo điều tra khả năng thông đồng của các nhà cung cấp DRAM tại Trung Quốc năm 2018. Đây là thông tin về điều tra, không phải kết luận đã có vi phạm của ba hãng hoặc chứng cứ Samsung thực tế chọn phương án A.",
+    "sourceIds":["sec"],"theory":"Vị thế độc quyền có thể tạo giá bán cao hoặc giá mua thấp có lợi cho tổ chức lớn. Độc quyền có tác động hai mặt; điều tiết cạnh tranh của nhà nước không tự động đồng nghĩa độc quyền nhà nước.","articleIds":["k08","k09","k10"]
+  }
+]

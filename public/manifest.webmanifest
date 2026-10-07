@@ -1,0 +1,10 @@
+{
+  "name": "Đế chế Độc quyền",
+  "short_name": "Đế chế",
+  "lang": "vi",
+  "start_url": "/#/choi",
+  "display": "standalone",
+  "background_color": "#f5f1e8",
+  "theme_color": "#f5f1e8",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

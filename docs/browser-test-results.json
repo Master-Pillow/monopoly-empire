@@ -1,0 +1,17 @@
+{
+  "testedAt": "2026-10-07T15:15:39.491Z",
+  "target": "http://127.0.0.1:5174",
+  "checks": [
+    "Màn chào desktop/mobile không tràn ngang",
+    "Bấm chọn liên tiếp chỉ ghi một lần; tải lại giữ giao dịch",
+    "Đủ 6 màn, kết cục lành mạnh đúng chỉ số; bài học quay lại đúng pha",
+    "Rủi ro được lưu, tải lại không bốc lại",
+    "Hỏi đáp bấm chọn, liên kết bài và giữ hội thoại khi đổi tab",
+    "Trắc nghiệm 10 câu, đảo đáp án, chấm đúng và giữ tiến trình",
+    "Tìm kiến thức không dấu",
+    "Bốn tab ở chiều rộng 360/390/430 px không tràn ngang",
+    "Cache ngoại tuyến: tải lại, Hỏi đáp và bài học chạy khi mất mạng",
+    "60 phiên tải đồng thời trên máy cục bộ: 180/180 HTTP 200; p95 356 ms; tổng 368 ms"
+  ],
+  "consoleErrors": []
+}

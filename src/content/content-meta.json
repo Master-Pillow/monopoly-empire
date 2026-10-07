@@ -1,0 +1,17 @@
+{
+  "version": "2026.10.07-v1",
+  "schemaVersion": 1,
+  "title": "Đế chế Độc quyền",
+  "editorialStatus": "provisional",
+  "aiEnabled": false,
+  "notice": "Nội dung tham khảo được biên tập từ tài liệu nhóm. Hãy đối chiếu giáo trình chính thức trước khi dùng để đánh giá học tập.",
+  "assumptions": [
+    "Chỉ số không ghi trong tài liệu được hiểu là thay đổi bằng 0.",
+    "Màn 2A áp dụng ngay lợi thế dài hạn đã quy đổi thành điểm.",
+    "Màn 3B trừ vốn trước; nếu còn vốn, có 50% rủi ro đặt Vốn về 0.",
+    "Màn 5A bị phạt 30 điểm Vốn chắc chắn sau lợi ích 20 điểm.",
+    "Màn 4C đổi lời dẫn của Màn 5; không bỏ qua màn nào.",
+    "Điểm Màn 4B, 4C, 5C và một số chỉ số Màn 5–6 là giả định tạm theo kế hoạch.",
+    "Ngưỡng kết cục là đề xuất sư phạm, cần được nhóm duyệt."
+  ]
+}

@@ -1,0 +1,14 @@
+export const statKeys = ['capital', 'marketShare', 'welfare', 'marketPower'] as const;
+export type StatKey = typeof statKeys[number];
+export type Stats = Record<StatKey, number>;
+export type Risk = { type: 'chance' | 'certain'; probability: number; effect: 'bankrupt' | 'fine'; amount?: number; title: string; text: string; safeText?: string };
+export type Choice = { id: string; label: string; text: string; delta: Stats; feedback: string; risk?: Risk; flag?: string; provisional?: boolean };
+export type Stage = { id: string; year: string; title: string; context: string; decision: string; choices: Choice[]; historyText: string; sourceIds: string[]; theory: string; articleIds: string[]; illustration: string; branchIntro?: string };
+export type Source = { id: string; title: string; publisher: string; url: string; verificationStatus: string };
+export type Article = { id: string; number: string; title: string; subtitle: string; summary: string; sections: { title: string; text: string }[]; example: string; stageIds: string[]; sourceIds: string[]; approved: boolean };
+export type Question = { id: string; prompt: string; options: { id: string; text: string }[]; correctOptionId: string; explanation: string; articleId: string; approved: boolean };
+export type Faq = { id: string; question: string; answer: string; keywords: string[]; articleIds: string[]; sourceIds: string[]; approved: boolean };
+export type Ending = { id: string; priority: number; title: string; summary: string; conditions: { key: StatKey; op: 'gte' | 'lte' | 'eq' | 'gt'; value: number }[]; articleIds: string[] };
+export type HistoryEntry = { stageId: string; choiceId: string; before: Stats; after: Stats; event: { occurred: boolean; title: string; text: string } | null; randomDraw: number | null };
+export type Game = { schemaVersion: number; contentVersion: string; runId: string; revision: number; phase: 'welcome' | 'choice' | 'event' | 'result' | 'theory' | 'ending'; stageIndex: number; stats: Stats; flags: string[]; history: HistoryEntry[]; endingId: string | null };
+export type Quiz = { contentVersion: string; questionIds: string[]; optionOrders: Record<string, string[]>; answers: Record<string, string>; index: number; completed: boolean };

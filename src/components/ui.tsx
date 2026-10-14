@@ -25,24 +25,32 @@ const paths: Record<string, ReactNode> = {
   copy: <><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></>,
   trophy: <><path d="M7 3h10v7a5 5 0 0 1-10 0V3Zm0 2H3v3c0 3 2 4 5 4m9-7h4v3c0 3-2 4-5 4M12 15v5m-5 1h10"/></>,
 };
-export function Icon({ name, size = 20 }: { name: string; size?: number }) { return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name] ?? paths.info}</svg>; }
-export const labels: Record<StatKey, { title: string; short: string; icon: string; color: string }> = {
-  capital: { title: 'Vốn', short: 'Vốn', icon: 'coin', color: 'copper' },
-  marketShare: { title: 'Thị phần', short: 'Thị phần', icon: 'chart', color: 'blue' },
-  welfare: { title: 'Phúc lợi người tiêu dùng', short: 'Phúc lợi', icon: 'heart', color: 'green' },
-  marketPower: { title: 'Quyền lực thị trường', short: 'Quyền lực', icon: 'power', color: 'purple' },
+export function Icon({ name, size = 20 }: { name: string; size?: number }) { return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name] ?? paths.info}</svg>; }
+export const labels: Record<StatKey, { title: string; short: string; icon: string; color: string; hint: string }> = {
+  capital: { title: 'Vốn', short: 'Vốn', icon: 'coin', color: 'copper', hint: 'Nguồn lực để đầu tư và tồn tại. Về 0 thì phá sản.' },
+  marketShare: { title: 'Thị phần', short: 'Thị phần', icon: 'chart', color: 'blue', hint: 'Phần thị trường doanh nghiệp của bạn đang nắm.' },
+  welfare: { title: 'Phúc lợi người tiêu dùng', short: 'Phúc lợi', icon: 'heart', color: 'green', hint: 'Lợi ích người mua nhận được từ giá và nguồn cung.' },
+  marketPower: { title: 'Quyền lực thị trường', short: 'Quyền lực', icon: 'power', color: 'purple', hint: 'Khả năng chi phối giá cả và thị trường.' },
 };
-export function StatsPanel({ stats, before, compact = false }: { stats: Stats; before?: Stats; compact?: boolean }) {
-  return <section className={`stats-panel ${compact ? 'compact' : ''}`} aria-label="Bốn chỉ số doanh nghiệp">
+export function StatsPanel({ stats, before, compact = false, explain = false }: { stats: Stats; before?: Stats; compact?: boolean; explain?: boolean }) {
+  return <section className={`stats-panel ${compact ? 'compact' : ''} ${explain ? 'explain' : ''}`} aria-label="Bốn chỉ số doanh nghiệp">
     <div className="stats-heading"><span className="eyebrow">SỨC KHỎE DOANH NGHIỆP</span><span className="tiny">/100</span></div>
     <div className="stats-grid">{statKeys.map(key => { const item = labels[key]; const diff = before ? stats[key] - before[key] : 0; return <div className={`stat ${item.color}`} key={key}>
-      <div className="stat-top"><span className="stat-label"><Icon name={item.icon} size={18}/><span>{item.short}</span></span><span className="stat-value">{stats[key]}{diff !== 0 && <span className={`delta ${diff > 0 ? 'positive' : 'negative'}`} key={`${key}-${stats[key]}`} aria-label={`Thay đổi ${diff > 0 ? 'tăng' : 'giảm'} ${Math.abs(diff)} điểm`}>{diff > 0 ? '+' : ''}{diff}</span>}</span></div>
+      <div className="stat-top"><span className="stat-label"><span className="stat-icon"><Icon name={item.icon} size={18}/></span><span>{explain ? item.title : item.short}</span></span><span className="stat-value">{stats[key]}{diff !== 0 && <span className={`delta ${diff > 0 ? 'positive' : 'negative'}`} key={`${key}-${stats[key]}`} aria-label={`Thay đổi ${diff > 0 ? 'tăng' : 'giảm'} ${Math.abs(diff)} điểm`}>{diff > 0 ? '+' : ''}{diff}</span>}</span></div>
       <div className="meter" role="progressbar" aria-label={item.title} aria-valuemin={0} aria-valuemax={100} aria-valuenow={stats[key]}><span style={{width: `${stats[key]}%`}}/></div>
+      {explain && <p className="stat-hint">{item.hint}</p>}
     </div>; })}</div>
     {!compact && <p className="stat-note">Điểm mô phỏng, không phải số liệu lịch sử.</p>}
   </section>;
 }
-export function SourceLinks({ ids }: { ids: string[] }) { return <div className="source-links">{ids.map(id => { const source = sources.find(s => s.id === id); return source?.url ? <a key={id} href={source.url} target="_blank" rel="noopener noreferrer"><Icon name="link" size={12}/>{source.publisher}</a> : null; })}</div>; }
+export function StatChanges({ before, after }: { before: Stats; after: Stats }) {
+  return <div className="impact">{statKeys.map(key => { const item = labels[key]; const diff = after[key] - before[key]; return <div className={`impact-item ${item.color}`} key={key}>
+    <span className="impact-label"><Icon name={item.icon} size={16}/>{item.short}</span>
+    <strong className={diff > 0 ? 'positive' : diff < 0 ? 'negative' : 'flat'}>{diff === 0 ? 'Không đổi' : `${diff > 0 ? '+' : '−'}${Math.abs(diff)}`}</strong>
+    <span className="impact-range">{before[key]} → {after[key]}</span>
+  </div>; })}</div>;
+}
+export function SourceLinks({ ids }: { ids: string[] }) { return <div className="source-links">{ids.map(id => { const source = sources.find(s => s.id === id); return source?.url ? <a key={id} href={source.url} target="_blank" rel="noopener noreferrer"><Icon name="link" size={13}/>{source.publisher}</a> : null; })}</div>; }
 export function Modal({ title, children, onClose }: { title: string; children: ReactNode; onClose: () => void }) {
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => { const previous = document.activeElement as HTMLElement; dialog.current?.showModal(); return () => previous?.focus(); }, []);

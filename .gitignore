@@ -7,3 +7,4 @@ dist/
 test-results/
 .pnpm-store/
 artifacts/
+/*.pdf

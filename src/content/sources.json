@@ -1,5 +1,7 @@
 [
   {"id":"group","title":"Tài liệu nhóm và kế hoạch triển khai v1","publisher":"Nhóm học tập","url":"","verificationStatus":"provisional"},
+  {"id":"textbook","title":"Giáo trình Kinh tế chính trị Mác – Lênin (dành cho bậc đại học – không chuyên lý luận chính trị), Hà Nội, 2019","publisher":"Bộ Giáo dục và Đào tạo","url":"","verificationStatus":"reference"},
+  {"id":"slides","title":"Đề cương bài giảng Kinh tế chính trị Mác – Lênin, Chương 4: Cạnh tranh và độc quyền trong nền kinh tế thị trường","publisher":"ThS. Lê Văn Thông","url":"","verificationStatus":"reference"},
   {"id":"cnt","title":"Samsung C&T — History","publisher":"Samsung C&T","url":"https://www.samsungcnt.com/eng/about-us/history.do","verificationStatus":"verified"},
   {"id":"semi","title":"Lịch sử ngành bán dẫn Samsung","publisher":"Samsung Semiconductor","url":"https://news.samsungsemiconductor.com/global/about-us/","verificationStatus":"verified"},
   {"id":"renault","title":"Renault: lịch sử mua Samsung Motors năm 2000","publisher":"Renault Group","url":"https://www.renaultgroup.com/Document-denregistrement-universel-2020/62/","verificationStatus":"verified"},

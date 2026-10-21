@@ -5,7 +5,7 @@ const keys = ['capital','marketShare','welfare','marketPower'];
 const errors = [];
 const check = (condition,message) => { if (!condition) errors.push(message); };
 for (const [name,list] of [['màn',stages],['kết cục',endings],['bài',articles],['câu hỏi',questions],['FAQ',faq],['nguồn',sources]]) check(new Set(list.map(x=>x.id)).size === list.length,`Trùng ID ${name}`);
-check(stages.length===6,'Phải có 6 màn'); check(articles.length===12,'Phải có 12 bài'); check(questions.length===24,'Phải có 24 câu hỏi'); check(faq.length===40,'Phải có 40 FAQ');
+check(stages.length===6,'Phải có 6 màn'); check(articles.length===12,'Phải có 12 bài'); check(questions.length===10,'Phải có 10 câu hỏi'); check(faq.length===40,'Phải có 40 FAQ');
 const reference = (ids,list,kind) => check(Array.isArray(ids) && ids.every(id=>list.some(x=>x.id===id)),`Liên kết ${kind} không tồn tại: ${ids}`);
 let provisional = 0;
 for (const [i,stage] of stages.entries()) {

@@ -11,7 +11,7 @@ Web game học Chương 4 — Cạnh tranh và độc quyền, lấy cảm hứn
 - Rủi ro M3B, sự kiện phạt M5A, lời dẫn riêng khi chọn M4C.
 - Kết quả, 5 kết cục có thứ tự ưu tiên, lịch sử, chơi lại, sao chép kết quả.
 - 12 bài kiến thức có liên kết từ game và câu sai.
-- 24 câu trắc nghiệm, 10 câu ngẫu nhiên không trùng mỗi lượt; đảo đáp án, giải thích ngay, tổng kết câu sai.
+- 10 câu trắc nghiệm theo giáo trình; mỗi lượt đảo thứ tự câu và đáp án, giải thích ngay, tổng kết câu sai.
 - 40 câu hỏi bấm chọn và câu trả lời tương ứng. Đây là nội dung soạn sẵn theo yêu cầu cập nhật của người dùng, không gọi API AI.
 - 6 minh họa SVG riêng cho màn chơi và 1 minh họa màn chào do dự án tự tạo.
 - Cache ngoại tuyến của bản production sau lần tải đầu, thông báo cập nhật, xử lý bản lưu hỏng và xung đột cửa sổ.
@@ -54,7 +54,7 @@ Phát triển: `pnpm dev`. Không mở trực tiếp `dist/index.html` bằng `f
 | `src/content/stages.json` | Lời dẫn, lựa chọn, điểm, sự kiện và thẻ lý luận |
 | `src/content/endings.json` | Điều kiện và ưu tiên kết cục |
 | `src/content/articles.json` | 12 bài kiến thức |
-| `src/content/questions.json` | Ngân hàng 24 câu và ID đáp án đúng |
+| `src/content/questions.json` | 10 câu trắc nghiệm và ID đáp án đúng |
 | `src/content/faq.json` | 40 câu hỏi bấm chọn và câu trả lời |
 | `src/content/sources.json` | Tên và đường dẫn nguồn |
 | `src/content/content-meta.json` | Phiên bản và các giả định tạm |

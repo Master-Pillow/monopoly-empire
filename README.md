@@ -5,7 +5,7 @@ Web game học Chương 4 Kinh tế chính trị Mác–Lênin về cạnh tranh
 ## Tính năng
 
 - Game 6 màn, 18 lựa chọn, 4 chỉ số và 5 kết cục.
-- 12 bài kiến thức, 24 câu trắc nghiệm với 10 câu ngẫu nhiên mỗi lượt.
+- 12 bài kiến thức, 10 câu trắc nghiệm theo giáo trình; mỗi lượt đảo thứ tự câu và đáp án.
 - 40 câu Hỏi đáp bấm chọn với câu trả lời soạn sẵn.
 - Giao diện điện thoại, lưu tiến trình và hỗ trợ ngoại tuyến sau lần tải đầu của bản production.
 

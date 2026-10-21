@@ -1,274 +1,120 @@
 # Toàn bộ câu hỏi và câu trả lời — Monopoly Empire
 
-Trích từ dữ liệu nội dung của web (`src/content`): 24 câu trắc nghiệm, 40 câu hỏi đáp, 6 tình huống quyết định trong game.
+Trích từ dữ liệu nội dung của web (`src/content`): 10 câu trắc nghiệm, 40 câu hỏi đáp, 6 tình huống quyết định trong game.
 
-## 1. Trắc nghiệm (24 câu)
+## 1. Trắc nghiệm (10 câu)
 
-Mỗi lượt làm bài, web rút ngẫu nhiên 10 câu và xáo thứ tự phương án, nên chữ cái A/B/C/D dưới đây không trùng với vị trí hiển thị trên web. Hãy nhớ nội dung đáp án, không nhớ chữ cái.
+Mỗi lượt làm bài, web đảo thứ tự câu hỏi và phương án, nên chữ cái A/B/C/D dưới đây không trùng với vị trí hiển thị trên web. Hãy nhớ nội dung đáp án, không nhớ chữ cái.
 
-### Câu 1. Quy luật giá trị yêu cầu sản xuất và trao đổi hàng hóa phải dựa trên cơ sở nào?
+### Câu 1. Theo giáo trình, độc quyền trong nền kinh tế thị trường là gì?
 
-- **A. Hao phí lao động xã hội cần thiết ✓**
-- B. Mức giá mỗi người bán tùy ý đặt
-- C. Chi phí quảng cáo của doanh nghiệp
-- D. Giá nguyên liệu đầu vào
+- A. Sự quản lý trực tiếp toàn bộ các ngành sản xuất bởi chính phủ tư sản
+- B. Sự xóa bỏ hoàn toàn tất cả các doanh nghiệp vừa và nhỏ trong nền kinh tế
+- C. Sự thỏa thuận phân chia lợi nhuận bình quân giữa tất cả các chủ thể kinh doanh
+- **D. Sự liên minh giữa các doanh nghiệp lớn nhằm thâu tóm sản xuất, tiêu thụ một số loại hàng hóa và định ra giá cả độc quyền ✓**
 
-**Đáp án:** Hao phí lao động xã hội cần thiết
+**Đáp án:** Sự liên minh giữa các doanh nghiệp lớn nhằm thâu tóm sản xuất, tiêu thụ một số loại hàng hóa và định ra giá cả độc quyền
 
-**Giải thích:** Quy luật giá trị yêu cầu sản xuất và trao đổi hàng hóa tiến hành trên cơ sở hao phí lao động xã hội cần thiết. Giá cả thị trường lên xuống xoay quanh giá trị dưới tác động của quan hệ cung – cầu.
+**Giải thích:** Giáo trình định nghĩa: độc quyền là sự liên minh giữa các doanh nghiệp lớn, có khả năng thâu tóm việc sản xuất và tiêu thụ một số loại hàng hóa, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao. Mục tiêu là lợi nhuận độc quyền cao chứ không phải lợi nhuận bình quân; độc quyền cũng không đồng nghĩa với việc nhà nước quản lý mọi ngành hay xóa bỏ hết doanh nghiệp vừa và nhỏ.
 
-### Câu 2. Màn 1B đầu tư máy để hạ chi phí minh họa điều gì?
+### Câu 2. Sự phát triển của lực lượng sản xuất dưới tác động của tiến bộ khoa học – kỹ thuật cuối thế kỷ XIX đã thúc đẩy sự hình thành các tổ chức độc quyền như thế nào?
 
-- **A. Cạnh tranh thúc đẩy cải tiến kỹ thuật ✓**
-- B. Mọi khoản đầu tư chắc chắn thành công
-- C. Cạnh tranh chấm dứt ngay lập tức
-- D. Doanh nghiệp đã hình thành cartel
+- **A. Đòi hỏi các doanh nghiệp phải có nguồn vốn lớn và quy mô sản xuất tập trung để ứng dụng tiến bộ kỹ thuật mới ✓**
+- B. Làm giảm nhu cầu liên kết giữa các xí nghiệp cùng ngành
+- C. Giảm bớt mức độ gay gắt của cuộc cạnh tranh giữa các nhà tư bản
+- D. Tạo điều kiện cho các xí nghiệp quy mô nhỏ chi phối thị trường
 
-**Đáp án:** Cạnh tranh thúc đẩy cải tiến kỹ thuật
+**Đáp án:** Đòi hỏi các doanh nghiệp phải có nguồn vốn lớn và quy mô sản xuất tập trung để ứng dụng tiến bộ kỹ thuật mới
 
-**Giải thích:** Trong cạnh tranh nội bộ ngành, doanh nghiệp cải tiến kỹ thuật, tăng năng suất lao động để hạ giá trị cá biệt của hàng hóa xuống thấp hơn giá trị xã hội. Trong game, khoản đầu tư này vẫn có chi phí và rủi ro.
+**Giải thích:** Ứng dụng tiến bộ kỹ thuật mới vào sản xuất đòi hỏi lượng vốn lớn mà từng doanh nghiệp khó đáp ứng, nên các doanh nghiệp phải đẩy nhanh tích tụ và tập trung sản xuất, hình thành doanh nghiệp quy mô lớn. Cuối thế kỷ XIX, lò luyện kim mới, động cơ điêzen, máy phát điện, xe hơi, tàu hỏa… làm xuất hiện những ngành sản xuất mới đòi hỏi quy mô lớn, đồng thời tăng năng suất lao động và khả năng tích lũy. Đây là nguyên nhân thứ nhất; hai nguyên nhân còn lại là cạnh tranh, khủng hoảng và sự phát triển của hệ thống tín dụng.
 
-### Câu 3. Nguyên nhân nào sau đây thúc đẩy sự hình thành các tổ chức độc quyền?
+### Câu 3. Theo giáo trình, vì sao nhà nước tư sản phải đứng ra đảm nhận phát triển các ngành thuộc kết cấu hạ tầng như năng lượng, giao thông vận tải, giáo dục?
 
-- **A. Tiến bộ khoa học kỹ thuật đòi hỏi vốn và quy mô sản xuất lớn ✓**
-- B. Cạnh tranh giữa các doanh nghiệp hoàn toàn biến mất
-- C. Mọi doanh nghiệp luôn giữ nguyên một quy mô
-- D. Sản xuất hiện đại không còn cần đến vốn
+- A. Nhà nước muốn ngăn cản các tập đoàn tư nhân mở rộng quy mô sản xuất
+- **B. Các ngành này cần vốn đầu tư lớn, thu hồi vốn chậm, ít lợi nhuận nên độc quyền tư nhân không thể hoặc không muốn đầu tư ✓**
+- C. Đây là các ngành thu được lợi nhuận độc quyền cao nhất trong nền kinh tế
+- D. Luật pháp tư sản cấm tư nhân tham gia vào mọi dịch vụ công cộng
 
-**Đáp án:** Tiến bộ khoa học kỹ thuật đòi hỏi vốn và quy mô sản xuất lớn
+**Đáp án:** Các ngành này cần vốn đầu tư lớn, thu hồi vốn chậm, ít lợi nhuận nên độc quyền tư nhân không thể hoặc không muốn đầu tư
 
-**Giải thích:** Giáo trình nêu ba nguyên nhân: sự phát triển của lực lượng sản xuất dưới tác động của tiến bộ khoa học kỹ thuật; cạnh tranh; khủng hoảng (nhất là năm 1873) cùng sự phát triển của hệ thống tín dụng. Cả ba đều thúc đẩy tích tụ, tập trung sản xuất.
+**Giải thích:** Phân công lao động xã hội phát triển làm xuất hiện một số ngành mới có vai trò quan trọng, nhưng các tổ chức độc quyền tư nhân không thể hoặc không muốn đầu tư vì vốn đầu tư lớn, thu hồi vốn chậm và ít lợi nhuận, nhất là kết cấu hạ tầng như năng lượng, giao thông vận tải, giáo dục, nghiên cứu khoa học cơ bản. Nhà nước đứng ra đảm nhận các ngành đó, qua đó tạo điều kiện cho các tổ chức độc quyền tư nhân kinh doanh những ngành khác có lợi hơn, chứ không nhằm ngăn cản tư nhân mở rộng.
 
-### Câu 4. Một ngành mới đòi hỏi nhà máy rất đắt và nghiên cứu dài hạn. Theo giáo trình, điều đó thúc đẩy quá trình nào?
+### Câu 4. Biểu hiện nào sau đây phản ánh tác động tích cực của độc quyền đối với nền kinh tế?
 
-- **A. Tích tụ và tập trung sản xuất, hình thành doanh nghiệp quy mô lớn ✓**
-- B. Chia nhỏ sản xuất cho thật nhiều hộ cá thể
-- C. Xóa bỏ nhu cầu về vốn của doanh nghiệp
-- D. Chấm dứt việc ứng dụng kỹ thuật mới
+- **A. Tập trung được nguồn lực, nhất là nguồn lực tài chính, cho nghiên cứu và triển khai khoa học – kỹ thuật ✓**
+- B. Xóa bỏ sự cạnh tranh khốc liệt trên thị trường
+- C. Luôn hạ giá bán hàng hóa xuống mức tối thiểu cho người tiêu dùng
+- D. Thủ tiêu hoàn toàn hiện tượng phân hóa giàu nghèo trong xã hội
 
-**Đáp án:** Tích tụ và tập trung sản xuất, hình thành doanh nghiệp quy mô lớn
+**Đáp án:** Tập trung được nguồn lực, nhất là nguồn lực tài chính, cho nghiên cứu và triển khai khoa học – kỹ thuật
 
-**Giải thích:** Ứng dụng kỹ thuật mới đòi hỏi lượng vốn lớn mà từng doanh nghiệp khó đáp ứng, nên doanh nghiệp phải đẩy nhanh tích tụ và tập trung sản xuất, hình thành các doanh nghiệp quy mô lớn. Màn 2 của game đặt bạn trước đúng yêu cầu vốn này.
+**Giải thích:** Là kết quả của tích tụ, tập trung sản xuất ở mức độ cao, các tổ chức độc quyền có khả năng tập trung nguồn lực, đặc biệt là tài chính, cho nghiên cứu và triển khai khoa học kỹ thuật, thúc đẩy tiến bộ kỹ thuật. Giáo trình lưu ý đây mới là khả năng; có thành hiện thực hay không còn tùy mục đích kinh tế của tổ chức độc quyền. Các phương án còn lại sai: độc quyền không thủ tiêu cạnh tranh, không giảm giá mà thường áp đặt giá bán cao, và có thể làm tăng phân hóa giàu nghèo.
 
-### Câu 5. Tích tụ tư bản là gì?
+### Câu 5. Theo giáo trình, sự xuất hiện của độc quyền tác động thế nào đến cạnh tranh?
 
-- **A. Tăng quy mô tư bản cá biệt bằng cách tư bản hóa giá trị thặng dư ✓**
-- B. Hợp nhất các tư bản cá biệt có sẵn thành một tư bản lớn hơn
-- C. Chia một doanh nghiệp lớn thành nhiều doanh nghiệp nhỏ
-- D. Đưa tư bản ra nước ngoài để thu lợi nhuận
+- A. Thủ tiêu hoàn toàn cạnh tranh giữa các nhà tư bản trong cùng một ngành
+- B. Biến mọi hình thức cạnh tranh thành sự hợp tác hoàn hảo giữa các chủ thể
+- C. Chỉ còn tồn tại cạnh tranh giữa người tiêu dùng với nhau
+- **D. Không thủ tiêu cạnh tranh mà làm cho cạnh tranh trở nên đa dạng, gay gắt hơn ✓**
 
-**Đáp án:** Tăng quy mô tư bản cá biệt bằng cách tư bản hóa giá trị thặng dư
+**Đáp án:** Không thủ tiêu cạnh tranh mà làm cho cạnh tranh trở nên đa dạng, gay gắt hơn
 
-**Giải thích:** Tích tụ tư bản là sự tăng thêm quy mô tư bản cá biệt bằng cách tư bản hóa giá trị thặng dư; nó làm tăng cả tư bản cá biệt lẫn tư bản xã hội. Hợp nhất các tư bản có sẵn là tập trung tư bản.
+**Giải thích:** Độc quyền sinh ra từ cạnh tranh tự do, nhưng sự xuất hiện của độc quyền không thủ tiêu cạnh tranh; trái lại, làm cho cạnh tranh trở nên đa dạng, gay gắt hơn. Ngoài cạnh tranh giữa các doanh nghiệp vừa và nhỏ còn có ba loại: giữa tổ chức độc quyền với doanh nghiệp ngoài độc quyền, giữa các tổ chức độc quyền với nhau, và trong nội bộ tổ chức độc quyền.
 
-### Câu 6. Mua lại một doanh nghiệp hiện hữu trong Màn 3C minh họa cơ chế nào?
+### Câu 6. Các tổ chức độc quyền thường dùng biện pháp nào trong cạnh tranh với các doanh nghiệp ngoài độc quyền?
 
-- **A. Tập trung tư bản ✓**
-- B. Tích tụ tư bản
-- C. Xuất khẩu hàng hóa
-- D. Độc quyền nhà nước
+- A. Cam kết giữ nguyên giá bán thấp hơn chi phí sản xuất vĩnh viễn
+- B. Nhờ sự can thiệp của Tòa án Quốc tế để đóng cửa doanh nghiệp nhỏ
+- C. Chủ động chia sẻ quyền sở hữu trí tuệ để giúp xí nghiệp nhỏ phát triển
+- **D. Độc quyền mua nguyên liệu đầu vào, độc quyền phương tiện vận tải, độc quyền tín dụng để loại bỏ đối thủ yếu thế ✓**
 
-**Đáp án:** Tập trung tư bản
+**Đáp án:** Độc quyền mua nguyên liệu đầu vào, độc quyền phương tiện vận tải, độc quyền tín dụng để loại bỏ đối thủ yếu thế
 
-**Giải thích:** Mua lại là hợp nhất các tư bản cá biệt có sẵn: quy mô tư bản cá biệt tăng lên nhưng quy mô tư bản xã hội không tăng. Đó là tập trung tư bản.
+**Giải thích:** Các tổ chức độc quyền thường tìm cách chi phối, thôn tính các doanh nghiệp ngoài độc quyền bằng nhiều biện pháp như độc quyền mua nguyên liệu đầu vào, độc quyền phương tiện vận tải, độc quyền tín dụng…, để loại các chủ thể yếu thế hơn ra khỏi thị trường. Đây là loại cạnh tranh thứ nhất trong trạng thái độc quyền.
 
-### Câu 7. Thành viên cartel còn độc lập về mặt nào?
+### Câu 7. Điểm khác biệt cơ bản giữa Syndicate (Xanh-đi-ca) và Cartel (Các-ten) là gì?
 
-- **A. Cả sản xuất và lưu thông hàng hóa ✓**
-- B. Chỉ sản xuất; việc mua bán do ban quản trị chung đảm nhận
-- C. Chỉ lưu thông; sản xuất do ban quản trị chung quản lý
-- D. Không còn độc lập về mặt nào
+- A. Syndicate lỏng lẻo và dễ tan vỡ hơn Cartel
+- B. Syndicate sáp nhập hoàn toàn các xí nghiệp thành một công ty cổ phần duy nhất
+- C. Syndicate chỉ bao gồm các ngân hàng thương mại liên kết lại
+- **D. Thành viên Syndicate mất độc lập về lưu thông hàng hóa: mọi việc mua, bán do một ban quản trị chung đảm nhận ✓**
 
-**Đáp án:** Cả sản xuất và lưu thông hàng hóa
+**Đáp án:** Thành viên Syndicate mất độc lập về lưu thông hàng hóa: mọi việc mua, bán do một ban quản trị chung đảm nhận
 
-**Giải thích:** Các xí nghiệp tham gia cartel chỉ ký hiệp nghị về giá cả, sản lượng, thị trường tiêu thụ, kỳ hạn thanh toán; họ vẫn độc lập cả về sản xuất và lưu thông. Vì vậy cartel là liên minh độc quyền không vững chắc.
+**Giải thích:** Trong Cartel, các xí nghiệp ký hiệp nghị thỏa thuận về giá cả, sản lượng, thị trường tiêu thụ, kỳ hạn thanh toán… nhưng vẫn độc lập cả về sản xuất và lưu thông hàng hóa, nên Cartel là liên minh không vững chắc. Trong Syndicate, thành viên vẫn độc lập về sản xuất nhưng mất độc lập về lưu thông: mọi việc mua, bán do một ban quản trị chung đảm nhận, nhằm thống nhất đầu mối để mua nguyên liệu giá rẻ, bán hàng hóa giá đắt. Vì vậy Syndicate cao hơn, ổn định hơn Cartel. Thống nhất quản lý cả sản xuất lẫn tiêu thụ, thành viên trở thành cổ đông là đặc trưng của Trust.
 
-### Câu 8. Thành viên vẫn độc lập về sản xuất nhưng mọi việc mua, bán do một ban quản trị chung đảm nhận. Đó là hình thức nào?
+### Câu 8. Tích tụ, tập trung trong ngân hàng và sự ra đời của độc quyền ngân hàng đã làm vai trò của ngân hàng thay đổi như thế nào?
 
-- **A. Syndicate ✓**
-- B. Cartel
-- C. Trust
-- D. Consortium
+- A. Chuyển hẳn sang hoạt động từ thiện và phúc lợi công cộng
+- B. Từ vai trò thống trị trở thành cơ quan phục vụ miễn phí cho xã hội
+- **C. Từ chỗ chỉ là trung gian thanh toán và tín dụng trở thành lực lượng có quyền lực “vạn năng”, khống chế hoạt động kinh tế – xã hội ✓**
+- D. Bị suy giảm hoàn toàn khả năng cho các xí nghiệp công nghiệp vay vốn
 
-**Đáp án:** Syndicate
+**Đáp án:** Từ chỗ chỉ là trung gian thanh toán và tín dụng trở thành lực lượng có quyền lực “vạn năng”, khống chế hoạt động kinh tế – xã hội
 
-**Giải thích:** Syndicate cao hơn và ổn định hơn cartel: thành viên giữ độc lập về sản xuất, chỉ mất độc lập về lưu thông. Mục đích là thống nhất đầu mối mua và bán để mua nguyên liệu giá rẻ, bán hàng hóa giá đắt.
+**Giải thích:** Trong ngân hàng cũng diễn ra tích tụ, tập trung: các ngân hàng vừa và nhỏ phải sáp nhập vào ngân hàng lớn hoặc phá sản, làm các tổ chức độc quyền ngân hàng ra đời. Từ chỗ chỉ là trung gian trong thanh toán và tín dụng, ngân hàng độc quyền nắm được hầu hết lượng tiền tệ của xã hội nên có quyền lực “vạn năng”, khống chế mọi hoạt động của nền kinh tế – xã hội. Dựa trên địa vị người cho vay, ngân hàng còn cử đại diện vào cơ quan quản lý của độc quyền công nghiệp hoặc trực tiếp đầu tư vào công nghiệp.
 
 ### Câu 9. Theo V.I. Lênin, tư bản tài chính là kết quả của sự hợp nhất giữa những loại tư bản nào?
 
-- **A. Tư bản ngân hàng độc quyền và tư bản của các liên minh độc quyền công nghiệp ✓**
-- B. Tiền mặt và hàng tồn kho của một doanh nghiệp bất kỳ
-- C. Tiền tiết kiệm và tiền tiêu dùng của các hộ gia đình
-- D. Tư bản của các cửa hàng bán lẻ trong cùng một ngành
+- A. Tư bản nhà nước và tài sản của giai cấp công nhân
+- **B. Tư bản ngân hàng độc quyền và tư bản của những liên minh độc quyền công nghiệp ✓**
+- C. Tư bản thương nghiệp và tư bản nông nghiệp tư sản
+- D. Tư bản cho vay nhỏ lẻ và tín dụng nông thôn
 
-**Đáp án:** Tư bản ngân hàng độc quyền và tư bản của các liên minh độc quyền công nghiệp
+**Đáp án:** Tư bản ngân hàng độc quyền và tư bản của những liên minh độc quyền công nghiệp
 
-**Giải thích:** V.I. Lênin viết: tư bản tài chính là kết quả của sự hợp nhất giữa tư bản ngân hàng của một số ít ngân hàng độc quyền lớn nhất với tư bản của những liên minh độc quyền các nhà công nghiệp.
+**Giải thích:** V.I. Lênin viết: “Tư bản tài chính là kết quả của sự hợp nhất giữa tư bản ngân hàng của một số ít ngân hàng độc quyền lớn nhất, với tư bản của những liên minh độc quyền các nhà công nghiệp”. Sự hợp nhất diễn ra qua xâm nhập hai chiều: ngân hàng cử đại diện vào cơ quan quản lý hoặc trực tiếp đầu tư vào công nghiệp; ngược lại, độc quyền công nghiệp mua cổ phần của các ngân hàng lớn để chi phối hoạt động ngân hàng.
 
-### Câu 10. Nắm cổ phiếu khống chế ở công ty mẹ để chi phối công ty con, công ty cháu là cơ chế gì?
+### Câu 10. Các tài phiệt thực hiện sự thống trị kinh tế của mình chủ yếu thông qua cơ chế nào?
 
-- **A. Chế độ tham dự ✓**
-- B. Chế độ ủy nhiệm
-- C. Xuất khẩu hàng hóa
-- D. Thỏa thuận cartel
+- A. Bãi bỏ hoàn toàn việc phát hành trái khoán và cổ phiếu
+- **B. “Chế độ tham dự” thông qua mua cổ phiếu khống chế ✓**
+- C. Quốc hữu hóa toàn bộ các công ty tư nhân thành tài sản công
+- D. Trực tiếp đứng tên quản lý từng xí nghiệp nhỏ lẻ
 
-**Đáp án:** Chế độ tham dự
+**Đáp án:** “Chế độ tham dự” thông qua mua cổ phiếu khống chế
 
-**Giải thích:** Qua chế độ tham dự, tài phiệt nắm cổ phiếu khống chế ở công ty mẹ, công ty mẹ chi phối công ty con, công ty con chi phối công ty cháu. Nhờ đó một lượng tư bản nhỏ khống chế được lượng tư bản lớn gấp nhiều lần.
-
-### Câu 11. Xây nhà máy ở nước ngoài và trực tiếp điều hành thuộc hình thức nào?
-
-- **A. Xuất khẩu tư bản bằng đầu tư trực tiếp ✓**
-- B. Xuất khẩu tư bản bằng đầu tư gián tiếp
-- C. Xuất khẩu hàng hóa
-- D. Tập trung tư bản trong nước
-
-**Đáp án:** Xuất khẩu tư bản bằng đầu tư trực tiếp
-
-**Giải thích:** Đầu tư trực tiếp là xuất khẩu tư bản để xây dựng xí nghiệp mới hoặc mua lại xí nghiệp đang hoạt động ở nước nhận đầu tư, nhằm trực tiếp kinh doanh thu lợi nhuận cao.
-
-### Câu 12. Bán chip cho khách nước ngoài, không đầu tư cơ sở hay vốn ở nước đó, là gì?
-
-- **A. Xuất khẩu hàng hóa ✓**
-- B. Xuất khẩu tư bản bằng đầu tư trực tiếp
-- C. Xuất khẩu tư bản bằng đầu tư gián tiếp
-- D. Phân chia lãnh thổ ảnh hưởng
-
-**Đáp án:** Xuất khẩu hàng hóa
-
-**Giải thích:** Xuất khẩu tư bản là xuất khẩu giá trị ra nước ngoài, tức đầu tư tư bản ra nước ngoài để thu giá trị thặng dư và các nguồn lợi nhuận khác. Chỉ bán sản phẩm qua biên giới là xuất khẩu hàng hóa.
-
-### Câu 13. Sự đụng độ giữa các tổ chức độc quyền trên trường quốc tế tất yếu dẫn tới xu hướng nào?
-
-- **A. Thỏa hiệp, ký hiệp định, hình thành các liên minh độc quyền quốc tế ✓**
-- B. Các tổ chức độc quyền tự giải thể để nhường thị trường
-- C. Chấm dứt hoàn toàn việc xuất khẩu tư bản
-- D. Mỗi quốc gia chỉ còn buôn bán trong nước
-
-**Đáp án:** Thỏa hiệp, ký hiệp định, hình thành các liên minh độc quyền quốc tế
-
-**Giải thích:** Cạnh tranh khốc liệt giữa các tổ chức độc quyền, được nhà nước của mình ủng hộ, tất yếu dẫn đến thỏa hiệp, ký kết hiệp định để củng cố địa vị độc quyền. Từ đó hình thành các liên minh độc quyền quốc tế dưới dạng cartel, syndicate, trust quốc tế.
-
-### Câu 14. “Chiến lược biên giới mềm” trong biểu hiện mới của sự phân chia lãnh thổ ảnh hưởng nghĩa là gì?
-
-- **A. Bành trướng “biên giới kinh tế”, tạo sự lệ thuộc về vốn và công nghệ ✓**
-- B. Xóa bỏ hoàn toàn biên giới giữa các quốc gia
-- C. Chiếm đóng thuộc địa bằng quân sự như thế kỷ XIX
-- D. Ngừng mọi quan hệ kinh tế với nước ngoài
-
-**Đáp án:** Bành trướng “biên giới kinh tế”, tạo sự lệ thuộc về vốn và công nghệ
-
-**Giải thích:** Khi chủ nghĩa thực dân cũ sụp đổ, các cường quốc tư bản tranh giành phạm vi ảnh hưởng bằng “chiến lược biên giới mềm”: bành trướng “biên giới kinh tế” rộng hơn biên giới địa lý, ràng buộc các nước kém phát triển từ lệ thuộc về vốn, công nghệ đến lệ thuộc về chính trị.
-
-### Câu 15. Giá cả độc quyền gồm những loại nào?
-
-- **A. Giá cả độc quyền cao khi bán và giá cả độc quyền thấp khi mua ✓**
-- B. Chỉ có giá bán cao, không liên quan đến giá mua
-- C. Chỉ có giá mua thấp, không liên quan đến giá bán
-- D. Mức giá do người tiêu dùng thỏa thuận với nhau
-
-**Đáp án:** Giá cả độc quyền cao khi bán và giá cả độc quyền thấp khi mua
-
-**Giải thích:** Giá cả độc quyền là giá do các tổ chức độc quyền áp đặt trong mua và bán hàng hóa: cao khi bán, thấp khi mua. Màn 6A và 6C của game mô phỏng hai mặt này.
-
-### Câu 16. Theo giáo trình, nguồn gốc của lợi nhuận độc quyền cao thực chất là gì?
-
-- **A. Lao động của công nhân trong và ngoài các xí nghiệp độc quyền ✓**
-- B. Giá trị mới tự sinh ra từ quyền định giá của tổ chức độc quyền
-- C. Khoản thưởng nhà nước dành cho các doanh nghiệp quy mô lớn
-- D. Phần chênh lệch có được nhờ chi nhiều tiền cho quảng cáo
-
-**Đáp án:** Lao động của công nhân trong và ngoài các xí nghiệp độc quyền
-
-**Giải thích:** Nguồn gốc lợi nhuận độc quyền cao thực chất vẫn là lao động của công nhân trong xí nghiệp độc quyền, cộng thêm lao động không công của công nhân ở xí nghiệp ngoài độc quyền, giá trị thặng dư của tư bản vừa và nhỏ bị mất đi, và lao động thặng dư của người sản xuất nhỏ, nhân dân các nước thuộc địa, phụ thuộc.
-
-### Câu 17. Khi xuất hiện độc quyền, cạnh tranh thế nào?
-
-- **A. Không bị thủ tiêu; trở nên đa dạng, gay gắt hơn ✓**
-- B. Biến mất hoàn toàn khỏi nền kinh tế
-- C. Chỉ còn giữa các cửa hàng nhỏ lẻ
-- D. Chỉ còn trong nội bộ một doanh nghiệp
-
-**Đáp án:** Không bị thủ tiêu; trở nên đa dạng, gay gắt hơn
-
-**Giải thích:** Độc quyền sinh ra từ cạnh tranh tự do nhưng không thủ tiêu cạnh tranh; trái lại làm cạnh tranh đa dạng, gay gắt hơn: giữa độc quyền với doanh nghiệp ngoài độc quyền, giữa các tổ chức độc quyền với nhau và trong nội bộ tổ chức độc quyền.
-
-### Câu 18. Vì sao độc quyền có thể kìm hãm tiến bộ kỹ thuật?
-
-- **A. Vì chỉ nghiên cứu, sáng chế khi vị thế độc quyền không bị đe dọa ✓**
-- B. Vì các tổ chức độc quyền không đủ vốn để nghiên cứu
-- C. Vì pháp luật cấm doanh nghiệp lớn đầu tư cho nghiên cứu
-- D. Vì tổ chức độc quyền không cần bán hàng hóa ra thị trường
-
-**Đáp án:** Vì chỉ nghiên cứu, sáng chế khi vị thế độc quyền không bị đe dọa
-
-**Giải thích:** Độc quyền tập trung được nguồn lực lớn nên có khả năng nghiên cứu, sáng chế. Nhưng vì lợi ích độc quyền, các hoạt động đó chỉ được thực hiện khi vị thế độc quyền không bị đe dọa; do vậy độc quyền ít nhiều kìm hãm tiến bộ kỹ thuật.
-
-### Câu 19. Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là gì?
-
-- **A. Kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước trong một cơ chế thống nhất ✓**
-- B. Nhà nước xóa bỏ toàn bộ các tổ chức độc quyền tư nhân trong nền kinh tế
-- C. Nhà nước chỉ thu thuế mà không tham gia vào hoạt động kinh tế nào
-- D. Một công ty tư nhân có số lượng nhân viên lớn nhất trong ngành
-
-**Đáp án:** Kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước trong một cơ chế thống nhất
-
-**Giải thích:** Độc quyền nhà nước trong chủ nghĩa tư bản hình thành nhằm phục vụ lợi ích của các tổ chức độc quyền tư nhân và duy trì, phát triển chủ nghĩa tư bản; nó kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước trong một cơ chế thống nhất.
-
-### Câu 20. Vì sao nhà nước phải đảm nhận các ngành như năng lượng, giao thông, nghiên cứu khoa học cơ bản?
-
-- **A. Vì vốn lớn, thu hồi chậm, ít lợi nhuận nên tư nhân không muốn đầu tư ✓**
-- B. Vì đây là những ngành không cần vốn đầu tư ban đầu
-- C. Vì tư nhân bị cấm kinh doanh trong mọi ngành kinh tế
-- D. Vì đây luôn là những ngành có lợi nhuận cao nhất
-
-**Đáp án:** Vì vốn lớn, thu hồi chậm, ít lợi nhuận nên tư nhân không muốn đầu tư
-
-**Giải thích:** Đây là nguyên nhân thứ hai hình thành độc quyền nhà nước: phân công lao động xã hội làm xuất hiện những ngành mà độc quyền tư nhân không thể hoặc không muốn đầu tư. Nhà nước đảm nhận để tạo điều kiện cho độc quyền tư nhân kinh doanh các ngành có lợi hơn.
-
-### Câu 21. Ngày nay, bên cạnh các tổ chức độc quyền lớn, doanh nghiệp vừa và nhỏ ra sao?
-
-- **A. Ngày càng nhiều, thường gia công cho các tập đoàn lớn ✓**
-- B. Biến mất hoàn toàn khỏi nền kinh tế
-- C. Không có quan hệ gì với các tập đoàn lớn
-- D. Kiểm soát toàn bộ thị trường thế giới
-
-**Đáp án:** Ngày càng nhiều, thường gia công cho các tập đoàn lớn
-
-**Giải thích:** Chuyên môn hóa sâu hình thành hệ thống gia công, trong đó hãng vừa và nhỏ phụ thuộc vào concern, conglomerate về nhiều mặt; đó cũng là một dạng kiểm soát mới của độc quyền. Doanh nghiệp nhỏ còn có thế mạnh linh hoạt, nhạy cảm với thị trường.
-
-### Câu 22. Concern khác conglomerate ở điểm nào?
-
-- **A. Concern là tổ chức độc quyền đa ngành; conglomerate gom các hãng không liên quan về sản xuất, chủ yếu kinh doanh chứng khoán ✓**
-- B. Concern chỉ hoạt động trong một ngành hẹp; conglomerate hoạt động trong mọi ngành sản xuất
-- C. Concern là tên gọi khác của cartel; conglomerate là tên gọi khác của syndicate
-- D. Hai hình thức này giống nhau hoàn toàn, chỉ khác nhau ở quốc gia đặt trụ sở
-
-**Đáp án:** Concern là tổ chức độc quyền đa ngành; conglomerate gom các hãng không liên quan về sản xuất, chủ yếu kinh doanh chứng khoán
-
-**Giải thích:** Concern gồm hàng trăm xí nghiệp có quan hệ với những ngành khác nhau, phân bố ở nhiều nước. Conglomerate kết hợp hàng chục hãng vừa và nhỏ không liên quan trực tiếp về sản xuất, mục đích chủ yếu là thu lợi nhuận từ kinh doanh chứng khoán.
-
-### Câu 23. Một vai trò tích cực của chủ nghĩa tư bản được giáo trình nêu là gì?
-
-- **A. Thúc đẩy lực lượng sản xuất phát triển nhanh chóng ✓**
-- B. Xóa bỏ mọi mâu thuẫn trong xã hội
-- C. Bảo đảm mọi tầng lớp hưởng lợi như nhau
-- D. Chấm dứt phân công lao động xã hội
-
-**Đáp án:** Thúc đẩy lực lượng sản xuất phát triển nhanh chóng
-
-**Giải thích:** Ba vai trò tích cực: thúc đẩy lực lượng sản xuất phát triển nhanh chóng; chuyển nền sản xuất nhỏ thành nền sản xuất lớn hiện đại; thực hiện xã hội hóa sản xuất. Giáo trình phân tích chúng cùng với các giới hạn phát triển.
-
-### Câu 24. Mâu thuẫn cơ bản của chủ nghĩa tư bản là mâu thuẫn giữa những yếu tố nào?
-
-- **A. Trình độ xã hội hóa cao của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất ✓**
-- B. Nhu cầu của người mua với mong muốn của người bán khi mặc cả giá ở chợ
-- C. Hoạt động xuất khẩu hàng hóa với hoạt động nhập khẩu hàng hóa của một nước
-- D. Số lượng doanh nghiệp lớn với số lượng doanh nghiệp nhỏ trong cùng một ngành
-
-**Đáp án:** Trình độ xã hội hóa cao của lực lượng sản xuất với chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất
-
-**Giải thích:** Những giới hạn phát triển của chủ nghĩa tư bản bắt nguồn từ mâu thuẫn giữa trình độ xã hội hóa ngày càng cao của lực lượng sản xuất với quan hệ sản xuất dựa trên chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất.
+**Giải thích:** Thực chất của “chế độ tham dự” là một nhà tài chính lớn hoặc một tập đoàn tài chính mua số cổ phiếu khống chế, chi phối công ty gốc (“công ty mẹ”); công ty mẹ lại nắm cổ phiếu khống chế các “công ty con”, công ty con chi phối các “công ty cháu”… Nhờ tổ chức theo kiểu móc xích này, với một lượng tư bản đầu tư nhỏ, tài phiệt khống chế và điều tiết được lượng tư bản lớn gấp nhiều lần. Ngoài chế độ tham dự, tài phiệt còn lập công ty mới, phát hành trái khoán, kinh doanh công trái, đầu cơ chứng khoán, đầu cơ ruộng đất…
 
 ## 2. Hỏi đáp (40 câu)
 
